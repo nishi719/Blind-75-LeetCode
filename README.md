@@ -59,7 +59,13 @@ This repository covers problems across various fundamental DSA topics:
 - Comprehensive explanations for all solutions.
 
 ---
-## How to Use This Repository
+## 📘 How to Use
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/nishi719/NeetcodeCracker.git
+2. Navigate to the problem's folder to view the C++ solution files.
+
+Navigate to the problem's folder to view the C++ solution files.
 
 ## 🤝 Contributions
 Feel free to:
