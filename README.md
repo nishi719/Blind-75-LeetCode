@@ -62,7 +62,7 @@ This repository covers problems across various fundamental DSA topics:
 ## 📘 How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/nishi719/NeetcodeCracker.git
+   [git clone https://github.com/nishi719/Blind-75-LeetCode.git]
 2. Navigate to the problem's folder to view the C++ solution files.
 
 Navigate to the problem's folder to view the C++ solution files.
