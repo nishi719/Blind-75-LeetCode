@@ -67,6 +67,8 @@ This repository covers problems across various fundamental DSA topics:
 
 Navigate to the problem's folder to view the C++ solution files.
 
+---
+
 ## 🤝 Contributions
 Feel free to:
 1. Suggest improvements or alternative solutions.
