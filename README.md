@@ -28,12 +28,20 @@ The repository is organized as follows:
 | Problem ID | Problem Name                           | Brute Force | Optimal | Best | Status  |
 |------------|----------------------------------------|-------------|---------|------|---------|
 | 1          | Two Sum                               | ✅          | ✅      | ✅   | Solved  |
+| 11         | Container with Most Water             | ✅          | ✅      | ✅   | Solved  |
+| 15         | 3 Sum                                 | ✅          | ✅      | ✅   | Solved  |
+| 21         | Merge Two Sorted Lists                | ✅          | ✅      | ✅   | Solved  |
+| 21         | Merge k Sorted Lists                  | ✅          | ✅      | ✅   | Solved  |
+| 33         | Search In Rotated Sorted Array        | ✅          | ✅      | ✅   | Solved  |
+| 53         | Maximum Subarray                      | ✅          | ✅      | ✅   | Solved  |
+| 141        | Detect Cycle                          | ✅          | ✅      | ✅   | Solved  |
+| 152        | Maximum Product Subarray              | ✅          | ✅      | ✅   | Solved  |
 | 121        | Best Time to Buy and Sell Stock       | ✅          | ✅      | ✅   | Solved  |
-| 125        | Valid Palindrome                      | ✅          | ✅      | ✅   | Solved  |
-| 128        | Longest Consecutive Sequence          | ✅          | ✅      | ✅   | Solved  |
+| 153        | Find Minimum in Rotated Sorted Array  | ✅          | ✅      | ✅   | Solved  |
+| 217        | Contain Duplicate                     | ✅          | ✅      | ✅   | Solved  |
+| 206        | Reverse Linked Lists                  | ✅          | ✅      | ✅   | Solved  |
 | 238        | Product of Array Except Self          | ✅          | ✅      | ✅   | Solved  |
-| 347        | Top K Frequent Elements               | ✅          | ✅      | ✅   | Solved  |
-| ...        | ...                                   | ...         | ...     | ...  | ...     |
+| ...        | ...                                   | ...         | ...      | ...  | ...     |
 
 
 ---
