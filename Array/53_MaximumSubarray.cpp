@@ -31,7 +31,8 @@ Constraints:
 /*
 * @Solution :
 Approach - I (Brute-Force) [TLE]
-We can start with brute-force by trying out every possible sub-array in nums and choosing the one with maximum sum.
+We can start with brute-force by trying out every possible sub-array in nums and 
+choosing the one with maximum sum.
 
 Time Complexity : O(N2), where N is the number of elements in nums. There are N*(N+1)/2 total sub-arrays and trying out each one takes time of O(N2)
 Space Complexity : O(1)

@@ -30,7 +30,8 @@ The product of any subarray of nums is guaranteed to fit in a 32-bit integer.
 * @Solution : 
 Approach 1: Brute Force Recursion (O(n^2))
 Intuition
-The brute force approach involves recursively exploring all possible subarrays and calculating their product.
+The brute force approach involves recursively exploring all possible subarrays and 
+calculating their product.
 
 Approach
 1.We begin by initiating a recursive function dfs, which takes the current index i and the array nums as parameters.

@@ -28,7 +28,11 @@ Constraints:
 /*
 * @Solution : 
 Intuition :
-We need to find the maximum profit from buying and selling on two different days. To maximize profit, we want to buy at the lowest price seen so far and sell at the highest possible price after buying. This can be done by tracking the minimum price as we traverse the list and calculating the potential profit each day by selling at the current price.
+We need to find the maximum profit from buying and selling on two different days. 
+To maximize profit, we want to buy at the lowest price seen so far and sell at the 
+highest possible price after buying. This can be done by tracking the minimum price as
+ we traverse the list and calculating the potential profit each day by selling at the 
+ current price.
 
 Approach :
 1.Initialize two variables:
@@ -97,7 +101,9 @@ public:
 Approach 2: Stack 
 
 Intuition
-The problem requires us to maximize profit by choosing the best day to buy and sell a stock. My first thought was to use a stack to track potential buying prices and compare them against future selling prices.
+The problem requires us to maximize profit by choosing the best day to buy and sell a 
+stock. My first thought was to use a stack to track potential buying prices and compare 
+them against future selling prices.
 
 Approach
 We iterate through the prices array while maintaining a stack to store potential buying prices.
@@ -136,7 +142,10 @@ public:
 Approach 3 :Kadane's Algorithm
 
 Intuition
-The problem aims to find the maximum profit that can be obtained by buying and selling a stock. The given solution seems to follow a simple approach of iterating through the prices, keeping track of the minimum buying price, and updating the profit whenever a higher selling price is encountered.
+The problem aims to find the maximum profit that can be obtained by buying and selling 
+a stock. The given solution seems to follow a simple approach of iterating through the 
+prices, keeping track of the minimum buying price, and updating the profit whenever a 
+higher selling price is encountered.
 
 Approach
 1.Initialize variables buy with the first element of the prices array and profit as 0.
@@ -146,10 +155,19 @@ Approach
 5.Return the final profit.
 
 Kadane's Algorithm
-Kadane's Algorithm is a dynamic programming technique used to find the maximum subarray sum in an array of numbers. The algorithm maintains two variables: max_current represents the maximum sum ending at the current position, and max_global represents the maximum subarray sum encountered so far. At each iteration, it updates max_current to include the current element or start a new subarray if the current element is larger than the accumulated sum. The max_global is updated if max_current surpasses its value.
+Kadane's Algorithm is a dynamic programming technique used to find the maximum subarray 
+sum in an array of numbers. The algorithm maintains two variables: 
+max_current represents the maximum sum ending at the current position, 
+and max_global represents the maximum subarray sum encountered so far. 
+At each iteration, it updates max_current to include the current element or start a 
+new subarray if the current element is larger than the accumulated sum. The max_global 
+is updated if max_current surpasses its value.
 
 Relating with the Approach
-In the provided approach for finding the maximum profit in stock prices, the algorithm can be seen as a variation of Kadane's Algorithm. Instead of finding the maximum subarray sum directly, it focuses on finding the maximum positive difference between consecutive elements (prices) in the array.
+In the provided approach for finding the maximum profit in stock prices, the algorithm 
+can be seen as a variation of Kadane's Algorithm. Instead of finding the maximum 
+subarray sum directly, it focuses on finding the maximum positive difference between 
+consecutive elements (prices) in the array.
 
 Here's how the approach relates to Kadane's Algorithm:
 

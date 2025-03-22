@@ -27,24 +27,27 @@ The input is generated such that answer[i] is guaranteed to fit in a 32-bit inte
 * @Solution : 
 
 Intuition
-Here in the problem we just have to give the product of all elements except the current element on which we are right now.
+Here in the problem we just have to give the product of all elements except the current 
+element on which we are right now.
 
 Approach
-To solve this we can calculate the whole product of the array and handle the edge cases seperately with the if-else statements.
-Example if zero is present once we will calculate the product without zero and in array all elements will be zero exceptthe place where zero is.
+To solve this we can calculate the whole product of the array and handle the edge cases
+seperately with the if-else statements.
+Example if zero is present once we will calculate the product without zero and in array
+all elements will be zero except the place where zero is.
 if there are more than one zero then whole array will have zeros
-and If no zero present then we will just divide the product with current element and return it.
+and If no zero present then we will just divide the product with current element and 
+return it.
 
 Complexity
 The provided solution for the problem of calculating the product of an array except self has the following time and space complexity analysis:
 
-Time Complexity:
-
+-Time Complexity:
 The algorithm consists of a single pass through the input array nums to calculate the total product and count the number of zeros. This takes O(n) time, where n is the number of elements in the array.
 In the worst-case scenario, there is another pass through the array to construct the result vector ans, which also takes O(n) time.
 Therefore, the overall time complexity of the solution is O(n).
-Space Complexity:
 
+-Space Complexity:
 The solution uses a constant amount of extra space for variables like product and countzero, which do not depend on the size of the input.
 The output vector ans is created to store the results, which has a size of n. However, this is considered part of the output rather than extra space used by the algorithm.
 Thus, the space complexity is O(1) for auxiliary space, excluding the output vector. If we include the output vector, it can be considered O(n) in terms of total space used.
@@ -112,7 +115,8 @@ Algorithm :
 
 Steps in Code :
 1.First pass: Use the result array to store prefix products.
-2.Second pass: Calculate suffix products in reverse order and multiply them directly with the values in result.
+2.Second pass: Calculate suffix products in reverse order and multiply them directly 
+with the values in result.
 3.Return the result array.
 
 Complexity Analysis :

@@ -333,20 +333,17 @@ This approach solves the problem in a single pass through the array. We're simul
 This method is particularly efficient because hash table operations (insertion and lookup) are typically O(1) on average. This means we're doing constant-time operations for each element in the array.
 
 Time Complexity Analysis:
+    O(n) where n is the length of the input array
+    We make a single pass through the array
+    For each element, we perform constant-time operations (hash table lookup and insertion)
 
-O(n) where n is the length of the input array
-We make a single pass through the array
-For each element, we perform constant-time operations (hash table lookup and insertion)
 Space Complexity Analysis:
-
-O(n) in the worst case
-In the worst scenario, we might need to store n-1 elements in our hash table before finding the solution
-However, on average, we'll store fewer elements, especially if a solution exists
+    O(n) in the worst case
+    In the worst scenario, we might need to store n-1 elements in our hash table before finding the solution
+    However, on average, we'll store fewer elements, especially if a solution exists
 This approach offers a significant improvement over both the brute force and two-pointer methods:
 
-It's faster than the brute force approach (O(n) vs O(n 
-2
- ))
+It's faster than the brute force approach (O(n) vs O(n^2))
 It doesn't require sorting the array like the two-pointer approach
 It solves the problem in a single pass through the array
 The trade-off is that we're using additional space to store the hash table. However, in many cases, this space-time tradeoff is worthwhile, especially when dealing with large input sizes where the O(n) time complexity becomes a significant advantage.
