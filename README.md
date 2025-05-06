@@ -28,10 +28,12 @@ The repository is organized as follows:
 | Problem ID | Problem Name                           | Brute Force | Optimal | Best | Status  |
 |------------|----------------------------------------|-------------|---------|------|---------|
 | 1          | Two Sum                               | ✅          | ✅      | ✅   | Solved  |
+| 5          | Remove Nth Node From End of List      | ✅          | ✅      | ✅   | Solved  |
+| 6          | Reorder List                          | ✅          | ✅      | ✅   | Solved  |
 | 11         | Container with Most Water             | ✅          | ✅      | ✅   | Solved  |
 | 15         | 3 Sum                                 | ✅          | ✅      | ✅   | Solved  |
 | 21         | Merge Two Sorted Lists                | ✅          | ✅      | ✅   | Solved  |
-| 21         | Merge k Sorted Lists                  | ✅          | ✅      | ✅   | Solved  |
+| 23         | Merge k Sorted Lists                  | ✅          | ✅      | ✅   | Solved  |
 | 33         | Search In Rotated Sorted Array        | ✅          | ✅      | ✅   | Solved  |
 | 53         | Maximum Subarray                      | ✅          | ✅      | ✅   | Solved  |
 | 141        | Detect Cycle                          | ✅          | ✅      | ✅   | Solved  |
