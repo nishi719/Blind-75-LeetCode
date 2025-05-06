@@ -108,3 +108,111 @@ ListNode* reverseList(ListNode* head) {
 
     return newHead;
 }
+
+/*
+Intuition💡:
+Iterative Approach:
+Use two pointers: prev (starts as null) and curr (starts at head).
+At each step:
+1 . Store curr.next in temp.
+2 . Reverse curr.next to point to prev.
+3 . Move prev to curr and curr to temp.
+Repeat until curr is null.
+prev becomes the new head of the reversed list.
+Visualization:
+Original list : 1 -> 2 -> 3 -> 4 -> 5 ->null
+Reversed list : 5 -> 4 -> 3 -> 2 -> 1 -> null
+
+
+Here Assume (next = temp)
+1 . prev = null:
+
+prev starts as null because there’s no node before the head.
+2 . curr = head:
+
+curr points to the first node (head) of the list.
+
+
+Step 1: Save the Next Node
+Code:
+ListNode temp = curr.next;
+
+Action: Save the next node of curr in a temporary variable temp.
+
+Visualization:
+
+curr -> 1
+temp -> 2
+
+
+Step 2: Reverse the Link
+Code: curr.next = prev;
+Action: Reverse the link of curr to point to prev.
+Visualization:
+null <- 1 2 -> 3 -> 4 -> 5 -> null
+
+
+Step 3: Move prev to curr
+Code: prev = curr;
+Action: Move prev to the current node (curr).
+Visualization:
+prev -> 1
+curr -> 1
+temp -> 2
+
+
+Step 4: Move curr to temp
+Code: curr = temp;
+Action: Move curr to the next node (saved in temp).
+Visualization:
+prev -> 1
+curr -> 2
+temp -> 2
+
+
+Step 5: Next Iteration - Save Next Node
+Code: ListNode temp = curr.next;
+Action: Save the next node of curr in temp for the next reversal step.
+Visualization:
+curr -> 2
+temp -> 3
+prev -> 1
+image.png
+
+Step 6: Reverse the Link
+Code: curr.next = prev;
+Action: Reverse the link of curr to point to prev.
+Visualization:
+null <- 1 <- 2    3 -> 4 -> 5 -> null
+
+
+Final State (After All Iterations)
+Code: return prev;
+Action: Return prev, which is now the new head of the reversed list.
+Visualization:
+Reversed Linked List: 5 -> 4 -> 3 -> 2 -> 1 -> null
+
+
+Result: The original list 1 -> 2 -> 3 -> 4 -> 5 -> null is now reversed to 5 -> 4 -> 3 -> 2 -> 1 -> null.
+⏳Complexity Analysis
+Time complexity: O(n) (linear time).
+Space complexity:O(1) (constant space).
+
+💻Code Implementation
+
+*/
+
+class Solution {
+    public:
+        ListNode* reverseList(ListNode* head) {
+            ListNode* prev = nullptr;
+            ListNode* curr = head;
+            while (curr != nullptr) {
+                ListNode* temp = curr->next; // Store the next node
+                curr->next = prev;            // Reverse the current node's pointer
+                prev = curr;                  // Move prev to current node
+                curr = temp;                  // Move to the next node
+            }
+            return prev; // New head of the reversed list
+        }
+    };
